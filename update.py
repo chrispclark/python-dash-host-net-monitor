@@ -39,7 +39,7 @@ colors = {"background": "rgb(50, 50, 50)", "text": "#FFFFFF"}
 # logger.info(type(external_stylesheets))
 
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, title="Host monitor")
 # , external_stylesheets=external_stylesheets)
 app.layout = html.Div(html.H4("Heading", style={"backgroundColor": "blue"}))
 # app = dash.Dash(__name__)
@@ -87,8 +87,8 @@ app.layout = html.Div(
                     {"name": "Status", "id": "Status", "editable": False},
                     {"name": "Test", "id": "Test", "editable": False},
                     {"name": "Reason", "id": "Reason", "editable": False},
-                    {"name": "last_down", "id": "last_down", "editable": False},
-                    {"name": "LastUp", "id": "last_up", "editable": False},
+                    {"name": "last Moved To down", "id": "last_down", "editable": False},
+                    {"name": "Last Moved To Up", "id": "last_up", "editable": False},
                 ],
                 # Read data from the dictionary that has been craeted from the
                 # current sql table.
