@@ -1,7 +1,0 @@
----
- id: 123
- host_name: ""
- date_first_seen: datetime.utcnow()
- date_last_failed: datetime.utcnow()
- method: ""
- 
